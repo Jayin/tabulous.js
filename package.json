@@ -1,0 +1,29 @@
+{
+  "name": "tabulous.js",
+  "version": "1.0.0",
+  "description": "jquery tab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jayin/tabulous.js.git"
+  },
+  "keywords": [
+    "jquery",
+    "plugin",
+    "tab"
+  ],
+  "author": "Jayin Ton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jayin/tabulous.js/issues"
+  },
+  "homepage": "https://github.com/Jayin/tabulous.js",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-minify-css": "^1.1.5",
+    "gulp-uglify": "^1.2.0"
+  }
+}
