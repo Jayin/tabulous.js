@@ -1,5 +1,11 @@
 /* Don't forget to include a CSS reset file otherwise it might look a little bit strange*/
-a:active,a:focus {
+
+body {
+    background-color: rgba(61, 207, 153, 0.9);
+}
+
+a:active,
+a:focus {
     outline: expression(hideFocus='true');
 }
 
@@ -12,18 +18,30 @@ p {
     margin: 0 auto;
     padding-top: 100px;
 }
-#tabs,#tabs2,#tabs3,#tabs4,#tabs5 {
+
+#tabs,
+#tabs2,
+#tabs3,
+#tabs4,
+#tabs5 {
     width: 500px;
     margin: 0 auto;
     margin-bottom: 40px;
 }
 
-#tabs li,#tabs2 li,#tabs3 li,#tabs4 li,#tabs5 li {
+#tabs li,
+#tabs2 li,
+#tabs3 li,
+#tabs4 li,
+#tabs5 li {
     float: left;
-    margin-right: 2px;
 }
 
-#tabs li a,#tabs2 li a,#tabs3 li a,#tabs4 li a,#tabs5 li a {
+#tabs li a,
+#tabs2 li a,
+#tabs3 li a,
+#tabs4 li a,
+#tabs5 li a {
     display: block;
     padding: 17px 30px;
     background: #544f6b;
@@ -31,7 +49,11 @@ p {
     color: #8478B3;
 }
 
-#tabs li a:hover,#tabs2 li a:hover,#tabs3 li a:hover,#tabs4 li a:hover,#tabs5 li a:hover {
+#tabs li a:hover,
+#tabs2 li a:hover,
+#tabs3 li a:hover,
+#tabs4 li a:hover,
+#tabs5 li a:hover {
     background: rgb(78, 74, 99);
 }
 
@@ -54,4 +76,15 @@ p {
 .tabulousclear {
     display: block;
     clear: both;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.demo-name {
+    font-size: 21px;
+    margin: 0 auto;
+    width: 500;
 }
