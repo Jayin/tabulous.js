@@ -1,0 +1,190 @@
+<html>
+
+<head>
+    <title>Tabulous.js</title>
+    <link href='../src/tabulous.css' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+    /* Don't forget to include a CSS reset file otherwise it might look a little bit strange*/
+    
+    body {
+        background-color: rgba(61, 207, 153, 0.9);
+    }
+    
+    a:active,
+    a:focus {
+        outline: expression(hideFocus='true');
+    }
+    
+    p {
+        margin-bottom: 20px;
+    }
+    
+    #wrapper {
+        width: 960px;
+        margin: 0 auto;
+        padding-top: 100px;
+    }
+    
+    #tabs,
+    #tabs2,
+    #tabs3,
+    #tabs4,
+    #tabs5 {
+        width: 500px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    
+    #tabs li,
+    #tabs2 li,
+    #tabs3 li,
+    #tabs4 li,
+    #tabs5 li {
+        float: left;
+    }
+    
+    #tabs li a,
+    #tabs2 li a,
+    #tabs3 li a,
+    #tabs4 li a,
+    #tabs5 li a {
+        display: block;
+        padding: 17px 30px;
+        background: #544f6b;
+        text-decoration: none;
+        color: #8478B3;
+    }
+    
+    #tabs li a:hover,
+    #tabs2 li a:hover,
+    #tabs3 li a:hover,
+    #tabs4 li a:hover,
+    #tabs5 li a:hover {
+        background: rgb(78, 74, 99);
+    }
+    
+    #tabs_container {
+        padding: 40px;
+        overflow: hidden;
+        position: relative;
+        background: white;
+    }
+    
+    #tabs_container div {
+        margin-right: 40px;
+    }
+    
+    .tabulous_active {
+        background: white !important;
+        color: #655c89 !important;
+    }
+    
+    .tabulousclear {
+        display: block;
+        clear: both;
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1" title="">Tab 1</a></li>
+                <li><a href="#tabs-2" title="">Tab 2</a></li>
+                <li><a href="#tabs-3" title="">Tab 3</a></li>
+            </ul>
+            <div id="tabs_container">
+                <div id="tabs-1">
+                    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus.</p>
+                    <p>Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                </div>
+                <div id="tabs-2">
+                    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor.</p>
+                </div>
+                <div id="tabs-3">
+                    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem.</p>
+                    <p> Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales.</p>
+                </div>
+            </div>
+            <!--End tabs container-->
+        </div>
+        <!--End tabs-->
+        <div id="tabs2">
+            <ul>
+                <li><a href="#tabs-1" title="">Tab 1</a></li>
+                <li><a href="#tabs-2" title="">Tab 2</a></li>
+                <li><a href="#tabs-3" title="">Tab 3</a></li>
+            </ul>
+            <div id="tabs_container">
+                <div id="tabs-1">
+                    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus.</p>
+                    <p>Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                </div>
+                <div id="tabs-2">
+                    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor.</p>
+                </div>
+                <div id="tabs-3">
+                    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem.</p>
+                    <p> Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales.</p>
+                </div>
+            </div>
+            <!--End tabs container-->
+        </div>
+        <!--End tabs-->
+        <div id="tabs3">
+            <ul>
+                <li><a href="#tabs-1" title="">Tab 1</a></li>
+                <li><a href="#tabs-2" title="">Tab 2</a></li>
+                <li><a href="#tabs-3" title="">Tab 3</a></li>
+            </ul>
+            <div id="tabs_container">
+                <div id="tabs-1">
+                    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus.</p>
+                    <p>Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                </div>
+                <div id="tabs-2">
+                    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor.</p>
+                </div>
+                <div id="tabs-3">
+                    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem.</p>
+                    <p> Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales.</p>
+                </div>
+            </div>
+            <!--End tabs container-->
+        </div>
+        <!--End tabs-->
+        <div id="tabs4">
+            <ul>
+                <li><a href="#tabs-1" title="">Tab 1</a></li>
+                <li><a href="#tabs-2" title="">Tab 2</a></li>
+                <li><a href="#tabs-3" title="">Tab 3</a></li>
+            </ul>
+            <div id="tabs_container">
+                <div id="tabs-1">
+                    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus.</p>
+                    <p>Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                </div>
+                <div id="tabs-2">
+                    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor.</p>
+                </div>
+                <div id="tabs-3">
+                    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem.</p>
+                    <p> Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales.</p>
+                </div>
+            </div>
+            <!--End tabs container-->
+        </div>
+        <!--End tabs-->
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="../src/tabulous.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
