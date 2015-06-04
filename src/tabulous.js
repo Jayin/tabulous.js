@@ -1,11 +1,4 @@
-/*!
- * strength.js
- * Original author: @aaronlumsden
- * Further changes, comments: @aaronlumsden
- * Licensed under the MIT license
- */
-;
-(function($, window, document, undefined) {
+;(function($, window, document, undefined) {
 
     var pluginName = "tabulous",
         defaults = {

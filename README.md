@@ -8,7 +8,7 @@ A jQuery tabs module for todays web!
 Tabulous.js can be used with any contents you choose in the tabs and it couldn't be more simpler to use.
 
 #### ..:: Demo
-For a demo visit http://git.aaronlumsden.com/tabulous.js/
+For a demo visit http://jayin.github.io/tabulous.js/demo/
 
 #### ..:: Getting Started
 
@@ -69,23 +69,30 @@ $('#tabs').tabulous({
 #### ..:: Options
 
 <table>
-  						<thead>
-								<tr>
-									<th>Variable</th>
-									<th>Default Value</th>
-									<th>Description</th>
-									<th>Valid Options</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>effect</td>
-									<td>scale</td>
-									<td>The effect to use for the transition</td>
-									<td>scale / slideLeft / scaleUp / flip</td>
-								</tr>
-							
+	<thead>
+		<tr>
+			<th>Variable</th>
+			<th>Default Value</th>
+			<th>Description</th>
+			<th>Valid Options</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>effect</td>
+			<td>scale</td>
+			<td>The effect to use for the transition</td>
+			<td>scale / slideLeft / scaleUp / flip</td>
+		</tr>
+	
 
-								
-							</tbody>
-						</table>
+		
+	</tbody>
+</table>
+
+
+#### License
+
+MIT 
+
+Original author: [@aaronlumsden](https://github.com/aarondo)
