@@ -21,12 +21,13 @@
             //link tab
             var links = this.$elem.find('a');
 
-            this.$elem.find('div').not(':first').not(':nth-child(1)').addClass('hide'+ this.options.effect);
+         
             //firstdiv,内容页的容器container
-            var $tabs_container = this.$elem.find('.tabs_container');
+            var $tabulous_container = this.$elem.find('.tabulous-container');
 
             //Tab 默认第一个
-            this.$elem.find('li:first-child').find('a').addClass('tabulous_active');
+            this.$elem.find('li:first-child').find('a').addClass('tabulous-active');
+            this.$elem.find('div').not(':first').not(':nth-child(1)').addClass('hide hide'+ this.options.effect);
 
             links.bind('click', {
                 options: this.options,
@@ -34,13 +35,13 @@
             }, function(e) {
                 e.preventDefault();
 
-                var $from_tab = e.data.$elem.find('.tabulous_active');
+                var $from_tab = e.data.$elem.find('.tabulous-active');
                 var $to_tab = $(this);
-                var $from_content = $tabs_container.find('div' + $from_tab.attr('href'));
-                var $to_content = $tabs_container.find('div' + $to_tab.attr('href'));
+                var $from_content = $tabulous_container.find('div' + $from_tab.attr('href'));
+                var $to_content = $tabulous_container.find('div' + $to_tab.attr('href'));
 
-                $from_content.removeClass('show' + e.data.options.effect).addClass('make_transist').addClass('hide' + e.data.options.effect);
-                $to_content.removeClass('hide' + e.data.options.effect).addClass('make_transist').addClass('show' + e.data.options.effect);
+                $from_content.removeClass('show show' + e.data.options.effect).addClass('make_transist').addClass('hide hide' + e.data.options.effect);
+                $to_content.removeClass('hide hide' + e.data.options.effect).addClass('make_transist').addClass('show show' + e.data.options.effect);
 
                 e.data.options.onSwitch($from_tab, $to_tab, $from_content, $to_content);
 
