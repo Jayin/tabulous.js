@@ -15,5 +15,9 @@ gulp.task('compress', function() {
     .pipe(gulp.dest('dist'))
 })
 
+gulp.task('watch', ['compress', 'minify-css'], function(){
+    gulp.watch(['./src/**/*'], ['compress', 'minify-css'])
+})
 
-gulp.task('default', ['compress', 'minify-css'])
+
+gulp.task('default', ['watch'])
